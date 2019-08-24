@@ -1,0 +1,1 @@
+module hamadakafu/golang_action_sample
