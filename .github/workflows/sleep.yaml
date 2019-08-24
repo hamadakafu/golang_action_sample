@@ -1,0 +1,19 @@
+name: Sleep2
+
+on:
+  push:
+    branches:
+      - master
+      - release/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run a sleep
+        run: |
+          echo "sleep 30"
+          sleep 30
+          echo "sleep 15"
+          sleep 15
